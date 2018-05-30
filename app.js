@@ -24,7 +24,16 @@ app.post('/message', function (req, res) {
   case '최신 영화':
     responseMsg = {
       message: {
-        text: '독전을 추천드려요!'
+        text: '현재 1위를 달리는 최신 영화입니다 :)',
+        photo: {
+          src: 'http://imgnews.naver.com/image/382/2018/05/22/0000647846_001_20180522070018869.jpg',
+          width: 600,
+          height: 418
+        },
+        message_button: {
+          label: '예고편 확인',
+          url: 'https://youtu.be/QKWlXvt9x7c'
+        }
       }
     }
     break
@@ -32,7 +41,16 @@ app.post('/message', function (req, res) {
   case '최애 영화':
     responseMsg = {
       message: {
-        text: '아이언맨3 추천드려요!'
+        text: '가장 재미있게 본 영화입니다 :)',
+        photo: {
+          src: 'http://cafefiles.naver.net/20130412_293/sw210_1365774948507QJbII_JPEG/-939269668.jpg',
+          width: 420,
+          height: 262
+        },
+        message_button: {
+          label: '명장면 확인',
+          url: 'https://youtu.be/AIhJvXPZH6U'
+        }
       }
     }
     break
